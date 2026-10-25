@@ -6,9 +6,9 @@ import { useState } from "react";
 export function LiveChat() {
   const [isOpen, setIsOpen] = useState(false);
   const [step, setStep] = useState(1); // 1 - forma, 2 - chat
-  const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
-  const [errors, setErrors] = useState({ name: false, phone: false });
+const [name, setName] = useState<string>("");
+const [phone, setPhone] = useState<string>("");
+  const [errors, setErrors] = useState<{ name: boolean; phone: boolean }>({ name: false, phone: false });
 
   const handleStartChat = () => {
     const newErrors = {
