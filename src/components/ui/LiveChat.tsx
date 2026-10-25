@@ -6,8 +6,8 @@ import { useState } from "react";
 export function LiveChat() {
   const [isOpen, setIsOpen] = useState(false);
   const [step, setStep] = useState(1); // 1 - forma, 2 - chat
-const [name, setName] = useState<string>("");
-const [phone, setPhone] = useState<string>("");
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
   const [errors, setErrors] = useState<{ name: boolean; phone: boolean }>({ name: false, phone: false });
 
   const handleStartChat = () => {
@@ -42,18 +42,21 @@ const [phone, setPhone] = useState<string>("");
         ${isOpen ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 translate-y-4 pointer-events-none"}
         overflow-hidden
       `}>
-        {/* Sarlavha (Ko'k fon) */}
-        <div className="bg-gradient-to-r from-primary-600 to-accent-500 p-4 flex justify-between items-center">
-          <span className="font-bold text-white text-lg">xosting.net Chat</span>
+        {/* Sarlavha (Toza va shishasimon) */}
+        <div className="p-4 flex justify-between items-center border-b border-white/5 bg-white/5">
+          <div className="flex items-center gap-2">
+            <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+            <span className="font-bold text-white text-base">xosting.net Chat</span>
+          </div>
           <button 
             onClick={() => setIsOpen(false)} 
-            className="text-white/80 hover:text-white bg-white/20 p-1.5 rounded-full transition-colors"
+            className="text-gray-400 hover:text-white bg-white/5 p-1.5 rounded-full transition-colors"
           >
             <X size={18} />
           </button>
         </div>
 
-        <div className="p-6">
+        <div className="p-5">
           {step === 1 ? (
             // 1-qadam: Ism va Telefon
             <div className="space-y-4">
@@ -92,7 +95,7 @@ const [phone, setPhone] = useState<string>("");
 
               <button 
                 onClick={handleStartChat}
-                className="w-full bg-gradient-to-r from-primary-600 to-accent-500 text-white font-semibold py-3 rounded-xl hover:opacity-90 transition-opacity mt-2"
+                className="w-full bg-white text-black font-semibold py-3 rounded-xl hover:bg-gray-200 transition-colors mt-2"
               >
                 Suhbatni boshlash
               </button>
@@ -100,9 +103,9 @@ const [phone, setPhone] = useState<string>("");
           ) : (
             // 2-qadam: Chat (Ism kiritilgandan keyin)
             <div>
-              <div className="bg-black/40 rounded-2xl p-4 text-sm text-gray-300 mb-4 h-48 overflow-y-auto flex flex-col gap-3">
+              <div className="bg-black/40 rounded-2xl p-4 text-sm text-gray-300 mb-4 h-48 overflow-y-auto flex flex-col gap-3 border border-white/5">
                 <div className="text-center text-xs text-gray-500 mb-2">Suhbat boshlandi. Operator tez orada javob beradi.</div>
-                <div className="bg-primary-500/20 text-white p-3 rounded-xl rounded-tl-none self-start max-w-[80%]">
+                <div className="bg-white/10 text-white p-3 rounded-xl rounded-tl-none self-start max-w-[80%] border border-white/5">
                   Salom, {name}! Sizga qanday yordam bera olamiz?
                 </div>
               </div>
@@ -112,7 +115,7 @@ const [phone, setPhone] = useState<string>("");
                   placeholder="Xabar yozing..." 
                   className="w-full bg-black/40 border border-white/10 rounded-full pl-5 pr-12 py-3 text-sm text-white focus:outline-none focus:border-primary-500 transition-all" 
                 />
-                <button className="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-primary-500 flex items-center justify-center text-white hover:bg-primary-600 transition-colors">
+                <button className="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-white text-black flex items-center justify-center hover:bg-gray-200 transition-colors">
                   <Send size={16} />
                 </button>
               </div>

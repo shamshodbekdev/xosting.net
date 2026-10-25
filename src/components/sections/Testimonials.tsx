@@ -6,19 +6,22 @@ export function Testimonials() {
       name: "Jasurbek T.",
       role: "Backend Dasturchi",
       text: "Django loyihalarim uchun juda tez serverlar. NVMe disklar haqiqatan ham sezilarli farq qiladi. Support 24/7 ishlaydi, har qanday savolga tez javob berishadi.",
-      rating: 5
+      rating: 5,
+      image: "https://randomuser.me/api/portraits/men/32.jpg"
     },
     {
       name: "Malika K.",
       role: "Marketolog",
       text: "Bizning korporativ saytimiz shu yerda joylashgan. DDoS hujumlariga chidamliligi va 99.99% uptime kafolati biznesimiz uchun juda muhim. Narxlar ham hamyonbop.",
-      rating: 5
+      rating: 5,
+      image: "https://randomuser.me/api/portraits/women/44.jpg"
     },
     {
       name: "Sardor M.",
       role: "Loyiha Menejeri",
       text: "ISPmanager paneli juda qulay. Yangi domen va SSL ulash bir necha daqiqada hal bo'ladi. Texnik yordam xizmati chindan ham professional darajada.",
-      rating: 5
+      rating: 5,
+      image: "https://randomuser.me/api/portraits/men/46.jpg"
     }
   ];
 
@@ -48,9 +51,11 @@ export function Testimonials() {
               </p>
               
               <div className="flex items-center gap-4">
-                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary-500 to-accent-400 flex items-center justify-center text-white font-bold">
-                  {review.name.charAt(0)}
-                </div>
+                <img 
+                  src={review.image} 
+                  alt={review.name}
+                  className="w-12 h-12 rounded-full object-cover border-2 border-primary-500/20"
+                />
                 <div>
                   <div className="font-semibold text-white">{review.name}</div>
                   <div className="text-sm text-gray-500">{review.role}</div>

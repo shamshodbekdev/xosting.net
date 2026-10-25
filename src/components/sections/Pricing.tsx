@@ -16,7 +16,6 @@ export function Pricing() {
       priceMonthly: 12000,
       priceYearly: 9600,
       features: ["5 GB NVMe SSD", "1 ta Sayt", "1 ta Email", "1 ta Database", "Bepul SSL", "10% CPU, 256MB RAM"],
-      popular: false,
     },
     {
       name: "Business",
@@ -24,7 +23,6 @@ export function Pricing() {
       priceMonthly: 29000,
       priceYearly: 23200,
       features: ["15 GB NVMe SSD", "5 ta Sayt", "10 ta Email", "5 ta Database", "Bepul SSL", "25% CPU, 512MB RAM", "Avtomatik Backup"],
-      popular: true,
     },
     {
       name: "Premium",
@@ -32,7 +30,6 @@ export function Pricing() {
       priceMonthly: 59000,
       priceYearly: 47200,
       features: ["40 GB NVMe SSD", "20 ta Sayt", "50 ta Email", "20 ta Database", "Bepul SSL", "50% CPU, 1GB RAM", "Avtomatik Backup", "LiteSpeed Cache"],
-      popular: false,
     },
     {
       name: "Ultimate",
@@ -40,7 +37,6 @@ export function Pricing() {
       priceMonthly: 99000,
       priceYearly: 79200,
       features: ["100 GB NVMe SSD", "Cheksiz Sayt", "Cheksiz Email", "Cheksiz Database", "Bepul SSL", "75% CPU, 2GB RAM", "Avtomatik Backup", "Priority Support"],
-      popular: false,
     },
   ];
 
@@ -80,20 +76,10 @@ export function Pricing() {
           </div>
         </FadeIn>
 
-<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {plans.map((plan, i) => (
             <FadeIn key={i} delay={i * 0.1}>
-              <div
-                className={cn(
-                  "glass-card p-8 rounded-3xl relative flex flex-col h-full",
-                  plan.popular && "border-primary-500/50 bg-primary-500/5"
-                )}
-              >
-                {plan.popular && (
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary-500 text-white text-xs font-bold px-3 py-1 rounded-full">
-                    TAVSIYA ETILADI
-                  </div>
-                )}
+              <div className="glass-card p-8 rounded-3xl relative flex flex-col h-full hover:-translate-y-1 transition-transform duration-300">
                 
                 <div className="mb-6">
                   <h3 className="text-2xl font-bold mb-2">{plan.name}</h3>
@@ -101,7 +87,7 @@ export function Pricing() {
                 </div>
 
                 <div className="mb-8">
-                  <span className="text-3xl sm:text-4xl font-bold text-white">
+                  <span className="text-4xl font-bold text-white">
                     {isYearly ? formatPrice(plan.priceYearly) : formatPrice(plan.priceMonthly)}
                   </span>
                   <span className="text-gray-400 ml-2">so'm / oy</span>
@@ -116,12 +102,12 @@ export function Pricing() {
                   ))}
                 </ul>
 
-                <Button variant={plan.popular ? "primary" : "secondary"} className="w-full">
+                <Button variant="secondary" className="w-full">
                   Tanlash
-               </Button>
-            </div>
-          </FadeIn>
-        ))}
+                </Button>
+              </div>
+            </FadeIn>
+          ))}
         </div>
       </div>
     </section>
