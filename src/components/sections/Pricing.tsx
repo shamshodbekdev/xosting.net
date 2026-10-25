@@ -118,10 +118,10 @@ export function Pricing() {
 
                 <Button variant={plan.popular ? "primary" : "secondary"} className="w-full">
                   Tanlash
-                </Button>
-              </div>
-            </FadeIn>
-          ))}
+               </Button>
+            </div>
+          </FadeIn>
+        ))}
         </div>
       </div>
     </section>
