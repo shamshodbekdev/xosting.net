@@ -11,7 +11,7 @@ export function Testimonials() {
     {
       name: "Malika K.",
       role: "Marketolog",
-      text: "Bizning korporativ saytimiz shu yerda joylashgan. DDoS hujumlariga chidamliligi va 99.9% uptime kafolati biznesimiz uchun juda muhim. Narxlar ham hamyonbop.",
+      text: "Bizning korporativ saytimiz shu yerda joylashgan. DDoS hujumlariga chidamliligi va 99.99% uptime kafolati biznesimiz uchun juda muhim. Narxlar ham hamyonbop.",
       rating: 5
     },
     {

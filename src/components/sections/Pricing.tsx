@@ -80,7 +80,7 @@ export function Pricing() {
           </div>
         </FadeIn>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {plans.map((plan, i) => (
             <FadeIn key={i} delay={i * 0.1}>
               <div
@@ -101,7 +101,7 @@ export function Pricing() {
                 </div>
 
                 <div className="mb-8">
-                  <span className="text-4xl font-bold text-white">
+                  <span className="text-3xl sm:text-4xl font-bold text-white">
                     {isYearly ? formatPrice(plan.priceYearly) : formatPrice(plan.priceMonthly)}
                   </span>
                   <span className="text-gray-400 ml-2">so'm / oy</span>
