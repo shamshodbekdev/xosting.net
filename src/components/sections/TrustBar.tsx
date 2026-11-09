@@ -1,11 +1,14 @@
+import { useTranslations } from "next-intl";
 import { ShieldCheck, Users, Clock, Zap } from "lucide-react";
 
 export function TrustBar() {
+  const t = useTranslations("TrustBar");
+
   const stats = [
-    { icon: ShieldCheck, value: "99.99%", label: "Uptime Kafolati" },
-    { icon: Users, value: "1000+", label: "Faol Mijozlar" },
-    { icon: Clock, value: "24/7", label: "Texnik Yordam" },
-    { icon: Zap, value: "NVMe", label: "Tezkor Disklar" },
+    { icon: ShieldCheck, value: "99.99%", label: t("uptime") },
+    { icon: Users, value: "1000+", label: t("clients") },
+    { icon: Clock, value: "24/7", label: t("support") },
+    { icon: Zap, value: "NVMe", label: t("disks") },
   ];
 
   return (

@@ -1,0 +1,429 @@
+{
+  "Metadata": {
+    "title": "xosting.net — Tezkor va Ishonchli Hosting",
+    "description": "O'zbekistondagi eng zamonaviy NVMe SSD hosting xizmati. DDoS himoyasi, 99.9% Uptime va 24/7 texnik yordam.",
+    "keywords": "hosting, xosting, uzbekistan hosting, nvme ssd, vps, domen",
+    "ogTitle": "xosting.net — Mukammal Hosting",
+    "ogDescription": "Loyihangiz uchun mukammal muhit. NVMe SSD, DDoS himoyasi."
+  },
+  "Navbar": {
+    "pricing": "Tariflar",
+    "features": "Imkoniyatlar",
+    "faq": "FAQ",
+    "contact": "Aloqa",
+    "login": "Kirish",
+    "getStarted": "Boshlash",
+    "openMenu": "Menyuni ochish",
+    "closeMenu": "Menyuni yopish"
+  },
+  "LanguageSwitcher": {
+    "label": "Tilni tanlash"
+  },
+  "Hero": {
+    "badge": "Yangi avlod NVMe Hosting",
+    "titleLine1": "Loyihangiz uchun",
+    "titleHighlight": "mukammal muhit",
+    "subtitle": "Tezkor NVMe SSD disklar, kuchli DDoS himoyasi va 99.99% Uptime kafolati. Bizning serverlarimiz orqali saytingizni tezlashtiring.",
+    "searchPlaceholder": "Mukammal domenni qidiring...",
+    "searchButton": "Qidirish",
+    "badgeSecurity": "Top Xavfsizlik",
+    "badgeSpeed": "NVMe Tezlik",
+    "badgeSupport": "Premium Qo'llab-quvvatlash"
+  },
+  "TrustBar": {
+    "uptime": "Uptime Kafolati",
+    "clients": "Faol Mijozlar",
+    "support": "Texnik Yordam",
+    "disks": "Tezkor Disklar"
+  },
+  "Features": {
+    "titleLine1": "Har bir tarifda kerak",
+    "titleLine2": "bo'ladigan hamma narsa",
+    "subtitle": "Bizning hosting xizmatlarimiz zamonaviy veb-saytlar uchun zarur bo'lgan barcha vositalar bilan jihozlangan.",
+    "items": {
+      "nvme": { "title": "NVMe SSD Disklar", "desc": "An'anaviy SSD'dan 10 baravar tezroq. Saytingiz bir zumda ochiladi." },
+      "ssl": { "title": "Bepul SSL Sertifikat", "desc": "Barcha saytlaringiz avtomatik ravishda HTTPS bilan himoyalanadi." },
+      "ddos": { "title": "DDoS Himoyasi", "desc": "Kuchli L3-L7 darajasidagi himoya. Hujumlar sizning saytingizga yetib kelmaydi." },
+      "stack": { "title": "PHP, Python, Node.js", "desc": "WordPress, Laravel, Django yoki Express — o'zingizga qulay stekda ishlang." },
+      "databases": { "title": "MySQL va PostgreSQL", "desc": "Ma'lumotlar bazalarini ISPmanager paneli orqali bir necha bosishda boshqaring." },
+      "backup": { "title": "Avtomatik Zaxira", "desc": "Ma'lumotlaringiz har kuni avtomatik saqlanadi. Xavotir olmang." }
+    }
+  },
+  "Pricing": {
+    "titleBefore": "Moslashuvchan",
+    "titleHighlight": "Narxlar",
+    "subtitle": "Hosting tariflar. Loyihangiz hajmidan qat'i nazar, bizda siz uchun mos yechim bor.",
+    "monthly": "Oylik",
+    "yearly": "Yillik",
+    "yearlyDiscount": "-20%",
+    "perMonth": "so'm / oy",
+    "choose": "Tanlash",
+    "plans": {
+      "start": {
+        "desc": "Kichik loyihalar va boshlang'ich saytlar uchun",
+        "features": ["5 GB NVMe SSD", "1 ta Sayt", "1 ta Email", "1 ta Database", "Bepul SSL", "10% CPU, 256MB RAM"]
+      },
+      "business": {
+        "desc": "Kichik biznes va bir necha saytlar uchun",
+        "features": ["15 GB NVMe SSD", "5 ta Sayt", "10 ta Email", "5 ta Database", "Bepul SSL", "25% CPU, 512MB RAM", "Avtomatik Backup"]
+      },
+      "premium": {
+        "desc": "O'rta loyihalar va ko'p resurs talab qiladigan saytlar uchun",
+        "features": ["40 GB NVMe SSD", "20 ta Sayt", "50 ta Email", "20 ta Database", "Bepul SSL", "50% CPU, 1GB RAM", "Avtomatik Backup", "LiteSpeed Cache"]
+      },
+      "ultimate": {
+        "desc": "Yirik loyihalar va yuqori trafik uchun",
+        "features": ["100 GB NVMe SSD", "Cheksiz Sayt", "Cheksiz Email", "Cheksiz Database", "Bepul SSL", "75% CPU, 2GB RAM", "Avtomatik Backup", "Priority Support"]
+      }
+    }
+  },
+  "Payments": {
+    "caption": "Qulay va xavfsiz to'lov tizimlari orqali to'lang"
+  },
+  "Testimonials": {
+    "titleBefore": "Mijozlarimiz",
+    "titleHighlight": "Fikri",
+    "subtitle": "Foydalanuvchilarimiz biz haqimizda nima deyishmoqda?",
+    "reviews": [
+      {
+        "name": "Jasurbek T.",
+        "role": "Backend Dasturchi",
+        "text": "Django loyihalarim uchun juda tez serverlar. NVMe disklar haqiqatan ham sezilarli farq qiladi. Support 24/7 ishlaydi, har qanday savolga tez javob berishadi."
+      },
+      {
+        "name": "Malika K.",
+        "role": "Marketolog",
+        "text": "Bizning korporativ saytimiz shu yerda joylashgan. DDoS hujumlariga chidamliligi va 99.99% uptime kafolati biznesimiz uchun juda muhim. Narxlar ham hamyonbop."
+      },
+      {
+        "name": "Sardor M.",
+        "role": "Loyiha Menejeri",
+        "text": "ISPmanager paneli juda qulay. Yangi domen va SSL ulash bir necha daqiqada hal bo'ladi. Texnik yordam xizmati chindan ham professional darajada."
+      }
+    ]
+  },
+  "FAQ": {
+    "titleBefore": "Tez-tez So'raladigan",
+    "titleHighlight": "Savollar",
+    "items": [
+      {
+        "q": "Xosting sotib olgandan keyin qancha vaqtda aktivlashadi?",
+        "a": "To'lov amalga oshirilganidan so'ng hosting xizmatlari avtomatik ravishda, bir necha daqiqa ichida aktivlashadi va sizga barcha kirish ma'lumotlari email orqali yuboriladi."
+      },
+      {
+        "q": "Boshqa provayderdan saytimni ko'chirib o'ta olamanmi?",
+        "a": "Ha, albatta! Bizning texnik jamoamiz sizning saytingizni boshqa provayderdan bizga bepul va hech qanday ma'lumot yo'qotishsiz ko'chirib o'tishga yordam beradi."
+      },
+      {
+        "q": "Qaysi to'lov usullari mavjud?",
+        "a": "Bizda Payme, Click, Paynet, Xazna, Humo, Ucard, Oson, Plum, Visa, Mastercard va kriptovalyutalar orqali to'lov qilish mumkin."
+      },
+      {
+        "q": "DDoS hujumlardan himoya bormi?",
+        "a": "Ha, barcha tariflarimiz L3-L7 darajasidagi kuchli DDoS himoyasi bilan jihozlangan. Hujumlar sizning saytingizga yetib kelmaydi."
+      },
+      {
+        "q": "Texnik yordam qanday ishlaydi?",
+        "a": "Bizning 24/7 texnik yordam jamoamiz Telegram, Livechat va telefon orqali doim aloqada. Har qanday muammoni tezda hal qilamiz."
+      }
+    ]
+  },
+  "CTA": {
+    "titleLine1": "Loyihangizni Biz Bilan",
+    "titleHighlight": "Boshlang",
+    "text": "Bugunoq ro'yxatdan o'ting va birinchi oylik hosting uchun <highlight>20% chegirmaga</highlight> ega bo'ling.",
+    "createAccount": "Hisob yaratish",
+    "contactOperator": "Operator bilan bog'lanish"
+  },
+  "Footer": {
+    "description": "O'zbekistonda professional hosting va server yechimlari. Ishonchli, tez va xavfsiz. Bizning serverlarimiz sizning loyihangiz uchun eng yaxshi muhitni ta'minlaydi.",
+    "servicesTitle": "Xizmatlar",
+    "webHosting": "Web Hosting",
+    "domainRegistration": "Domen Ro'yxatdan O'tkazish",
+    "corporateMail": "Korporativ Pochta",
+    "sslCertificates": "SSL Sertifikatlar",
+    "companyTitle": "Kompaniya",
+    "about": "Biz haqimizda",
+    "contact": "Aloqa",
+    "offer": "Ommaviy oferta",
+    "privacy": "Maxfiylik siyosati",
+    "contactTitle": "Aloqa",
+    "support": "(Support)",
+    "group": "(Guruh)",
+    "copyright": "© 2026 <brand>xosting.net</brand>. Barcha huquqlar himoyalangan."
+  },
+  "LiveChat": {
+    "title": "xosting.net Chat",
+    "open": "Chatni ochish",
+    "close": "Chatni yopish",
+    "greeting": "Assalomu alaykum!",
+    "help": "Sizga qanday yordam bera olamiz?",
+    "namePlaceholder": "Ismingiz *",
+    "nameError": "Ismingizni kiriting",
+    "phonePlaceholder": "+998 90 123 45 67 *",
+    "phoneError": "Telefon raqamingizni kiriting",
+    "start": "Suhbatni boshlash",
+    "started": "Suhbat boshlandi. Operator tez orada javob beradi.",
+    "hello": "Salom, {name}! Sizga qanday yordam bera olamiz?",
+    "messagePlaceholder": "Xabar yozing...",
+    "send": "Yuborish"
+  },
+  "Dashboard": {
+    "Metadata": {
+      "default": "Shaxsiy kabinet",
+      "overview": "Umumiy ko'rinish",
+      "services": "Xizmatlarim",
+      "domains": "Domenlar",
+      "billing": "To'lovlar",
+      "support": "Yordam",
+      "settings": "Sozlamalar"
+    },
+    "Nav": {
+      "label": "Shaxsiy kabinet menyusi",
+      "overview": "Umumiy ko'rinish",
+      "services": "Xizmatlarim",
+      "domains": "Domenlar",
+      "billing": "To'lovlar",
+      "support": "Yordam",
+      "settings": "Sozlamalar",
+      "logout": "Chiqish",
+      "openMenu": "Menyuni ochish",
+      "closeMenu": "Menyuni yopish",
+      "skipToContent": "Asosiy kontentga o'tish",
+      "backToSite": "Saytga qaytish",
+      "upgradeTitle": "Ko'proq resurs kerakmi?",
+      "upgradeText": "Tarifingizni bir necha bosishda kengaytiring.",
+      "upgradeCta": "Tariflarni ko'rish"
+    },
+    "Topbar": {
+      "notifications": "Bildirishnomalar",
+      "unread": "{count} ta yangi",
+      "markAllRead": "Barchasini o'qilgan deb belgilash",
+      "empty": "Yangi bildirishnomalar yo'q",
+      "userMenu": "Foydalanuvchi menyusi",
+      "settings": "Sozlamalar",
+      "support": "Yordam markazi",
+      "logout": "Chiqish"
+    },
+    "Notifications": {
+      "invoice": {
+        "title": "Yangi hisob-faktura",
+        "text": "{number} raqamli hisob-faktura yaratildi."
+      },
+      "ticket": {
+        "title": "Murojaatingizga javob berildi",
+        "text": "#{id} murojaatingizga mutaxassis javob berdi."
+      },
+      "domain": {
+        "title": "Domen muddati tugamoqda",
+        "text": "{domain} domenining amal qilish muddati tez orada tugaydi."
+      }
+    },
+    "Status": {
+      "active": "Faol",
+      "paid": "To'langan",
+      "pending": "Kutilmoqda",
+      "open": "Ochiq",
+      "answered": "Javob berilgan",
+      "closed": "Yopilgan",
+      "expiringSoon": "Muddati tugamoqda",
+      "expired": "Muddati tugagan",
+      "cancellationRequested": "Bekor qilinmoqda"
+    },
+    "Common": {
+      "currency": "so'm",
+      "monthly": "Oylik",
+      "yearly": "Yillik",
+      "perMonth": "oy",
+      "perYear": "yil",
+      "close": "Yopish",
+      "viewAll": "Barchasini ko'rish",
+      "gb": "{used} / {total} GB",
+      "newTab": "yangi oynada ochiladi"
+    },
+    "Overview": {
+      "welcome": "Xush kelibsiz, <highlight>{name}</highlight>!",
+      "subtitle": "Hisobingiz va xizmatlaringiz holati bir joyda.",
+      "stats": {
+        "services": "Faol xizmatlar",
+        "domains": "Domenlar",
+        "balance": "To'lanmagan summa",
+        "tickets": "Ochiq murojaatlar"
+      },
+      "activeServices": "Faol xizmatlar",
+      "activePlans": "{count, plural, other {# ta faol hosting tarifi}}",
+      "noHosting": "Sizda hali faol hosting tarifi yo'q.",
+      "disk": "Disk",
+      "bandwidth": "Trafik",
+      "manageServices": "Boshqarish",
+      "quickActions": "Tezkor amallar",
+      "createSite": "Yangi sayt yaratish",
+      "createSiteText": "ISPmanager panelida sayt qo'shing",
+      "addDomain": "Domen qo'shish",
+      "addDomainText": "Ro'yxatdan o'tkazing yoki ko'chiring",
+      "contactSupport": "Yordamga murojaat",
+      "contactSupportText": "Mutaxassislarimiz 24/7 aloqada",
+      "recentInvoices": "So'nggi hisob-fakturalar"
+    },
+    "Services": {
+      "title": "Xizmatlarim",
+      "subtitle": "Hosting va server xizmatlaringizni boshqaring, kengaytiring yoki bekor qiling.",
+      "types": {
+        "hosting": "Hosting",
+        "vps": "VPS server"
+      },
+      "billingCycle": "To'lov davri",
+      "price": "Narxi",
+      "nextDue": "Keyingi to'lov",
+      "disk": "Disk",
+      "bandwidth": "Trafik",
+      "specs": "Texnik xususiyatlar",
+      "manage": "Boshqarish",
+      "upgrade": "Kengaytirish",
+      "cancel": "Bekor qilish",
+      "cancelTitle": "Xizmatni bekor qilish",
+      "cancelText": "{name} xizmatini bekor qilmoqchimisiz? Joriy to'lov davri tugagach xizmat o'chiriladi va undagi barcha ma'lumotlar o'chib ketadi.",
+      "cancelConfirm": "Ha, bekor qilish",
+      "keep": "Xizmatni saqlab qolish",
+      "cancelSuccess": "{name} xizmatini bekor qilish so'rovi qabul qilindi.",
+      "empty": "Sizda hali faol xizmatlar yo'q."
+    },
+    "Domains": {
+      "title": "Domenlar",
+      "subtitle": "Ro'yxatdan o'tgan domenlaringiz va ularning amal qilish muddatlari.",
+      "add": "Domen qo'shish",
+      "registered": "Ro'yxatdan o'tgan",
+      "expires": "Amal qilish muddati",
+      "expiredText": "Muddati o'tib ketgan",
+      "daysLeft": "{days, plural, other {# kun qoldi}}",
+      "autoRenew": "Avto-yangilash",
+      "autoRenewOn": "{domain} uchun avto-yangilash yoqildi.",
+      "autoRenewOff": "{domain} uchun avto-yangilash o'chirildi.",
+      "renew": "Yangilash",
+      "renewSuccess": "{domain} domenini yangilash uchun {number} hisob-fakturasi yaratildi.",
+      "addTitle": "Domen qo'shish",
+      "addText": "Yangi domen ro'yxatdan o'tkazing yoki mavjud domeningizni xosting.net ga ko'chiring.",
+      "domainLabel": "Domen nomi",
+      "domainPlaceholder": "misol.uz",
+      "domainError": "To'g'ri domen nomini kiriting, masalan: misol.uz",
+      "actionLabel": "Amal turi",
+      "register": "Yangi ro'yxatdan o'tkazish",
+      "transfer": "Boshqa provayderdan ko'chirish",
+      "registerSuccess": "{domain} domenini ro'yxatdan o'tkazish so'rovi qabul qilindi.",
+      "transferSuccess": "{domain} domenini ko'chirish so'rovi qabul qilindi.",
+      "cancel": "Bekor qilish",
+      "addSubmit": "So'rov yuborish",
+      "empty": "Sizda hali domenlar yo'q."
+    },
+    "Billing": {
+      "title": "To'lovlar",
+      "subtitle": "Hisob-fakturalar tarixi, to'lov holati va PDF nusxalar.",
+      "balanceDue": "To'lanmagan summa",
+      "pendingCount": "{count, plural, =0 {To'lanmagan hisob-faktura yo'q} other {# ta hisob-faktura kutilmoqda}}",
+      "paidThisYear": "Shu yil to'langan",
+      "nextPayment": "Keyingi to'lov",
+      "noPayment": "Rejalashtirilgan to'lov yo'q",
+      "invoices": "Hisob-fakturalar",
+      "filterLabel": "Hisob-fakturalarni filtrlash",
+      "filters": {
+        "all": "Barchasi",
+        "paid": "To'langan",
+        "pending": "Kutilmoqda"
+      },
+      "number": "Raqami",
+      "description": "Tavsif",
+      "date": "Sana",
+      "dueDate": "To'lov muddati",
+      "amount": "Summa",
+      "status": "Holati",
+      "download": "PDF yuklab olish",
+      "downloadShort": "PDF",
+      "domainRenewal": "Domenni yangilash: {domain}",
+      "empty": "Hisob-fakturalar topilmadi."
+    },
+    "Support": {
+      "title": "Yordam markazi",
+      "subtitle": "Murojaatlaringiz tarixi. Mutaxassislarimiz odatda 15 daqiqa ichida javob berishadi.",
+      "newTicket": "Yangi murojaat",
+      "filterLabel": "Murojaatlarni filtrlash",
+      "filters": {
+        "all": "Barchasi",
+        "open": "Ochiq",
+        "closed": "Yopilgan"
+      },
+      "priority": "Muhimlik",
+      "updated": "Yangilangan",
+      "departments": {
+        "technical": "Texnik yordam",
+        "billing": "To'lovlar bo'limi",
+        "sales": "Sotuv bo'limi"
+      },
+      "priorities": {
+        "low": "Past",
+        "normal": "O'rta",
+        "high": "Yuqori"
+      },
+      "samples": {
+        "ssl": "SSL sertifikatini o'rnatishda xatolik",
+        "payment": "To'lov hisobga tushmadi",
+        "upgrade": "VPS tarifini kengaytirish",
+        "migration": "Saytni boshqa provayderdan ko'chirish"
+      },
+      "form": {
+        "title": "Yangi murojaat",
+        "text": "Muammoni batafsil yozing — bu bizga tezroq yordam berishga imkon beradi.",
+        "subject": "Mavzu",
+        "subjectPlaceholder": "Masalan: sayt ochilmayapti",
+        "department": "Bo'lim",
+        "priority": "Muhimlik darajasi",
+        "message": "Xabar",
+        "messagePlaceholder": "Muammoni, xato matnini va qachondan boshlanganini yozing...",
+        "subjectError": "Mavzu kamida {min} ta belgidan iborat bo'lishi kerak",
+        "messageError": "Xabar kamida {min} ta belgidan iborat bo'lishi kerak",
+        "cancel": "Bekor qilish",
+        "submit": "Yuborish"
+      },
+      "success": "#{id} raqamli murojaatingiz qabul qilindi. Tez orada javob beramiz.",
+      "empty": "Bu bo'limda murojaatlar yo'q."
+    },
+    "Settings": {
+      "title": "Sozlamalar",
+      "subtitle": "Profil ma'lumotlari, xavfsizlik va bildirishnomalarni boshqaring.",
+      "profile": {
+        "title": "Profil",
+        "text": "Shaxsiy ma'lumotlaringiz va aloqa manzillaringiz.",
+        "fullName": "To'liq ism",
+        "email": "Email",
+        "phone": "Telefon raqam",
+        "save": "Saqlash",
+        "saved": "Profil ma'lumotlari saqlandi.",
+        "nameError": "Ismingizni kiriting",
+        "emailError": "To'g'ri email manzilini kiriting"
+      },
+      "security": {
+        "title": "Xavfsizlik",
+        "text": "Hisobingizni himoya qilish uchun kuchli va takrorlanmas paroldan foydalaning.",
+        "current": "Joriy parol",
+        "new": "Yangi parol",
+        "confirm": "Yangi parolni tasdiqlang",
+        "hint": "Kamida {min} ta belgi",
+        "submit": "Parolni yangilash",
+        "success": "Parolingiz muvaffaqiyatli yangilandi.",
+        "currentError": "Joriy parolni kiriting",
+        "minError": "Parol kamida {min} ta belgidan iborat bo'lishi kerak",
+        "matchError": "Parollar bir-biriga mos kelmadi"
+      },
+      "notifications": {
+        "title": "Bildirishnomalar",
+        "text": "Qaysi xabarlarni email orqali olishni tanlang.",
+        "invoices": "Hisob-fakturalar va to'lovlar",
+        "invoicesText": "Yangi hisob-fakturalar va to'lov eslatmalari",
+        "tickets": "Murojaatlarga javoblar",
+        "ticketsText": "Mutaxassis javob berganda xabar olish",
+        "news": "Yangiliklar va aksiyalar",
+        "newsText": "Chegirmalar va yangi xizmatlar haqida",
+        "saved": "Bildirishnoma sozlamalari yangilandi."
+      }
+    }
+  }
+}

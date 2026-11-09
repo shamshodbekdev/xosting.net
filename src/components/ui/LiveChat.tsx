@@ -2,8 +2,10 @@
 
 import { MessageCircle, X, Send } from "lucide-react";
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 export function LiveChat() {
+  const t = useTranslations("LiveChat");
   const [isOpen, setIsOpen] = useState(false);
   const [step, setStep] = useState(1); // 1 - forma, 2 - chat
   const [name, setName] = useState("");
@@ -46,10 +48,11 @@ export function LiveChat() {
         <div className="p-4 flex justify-between items-center border-b border-white/5 bg-white/5">
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-            <span className="font-bold text-white text-base">xosting.net Chat</span>
+            <span className="font-bold text-white text-base">{t("title")}</span>
           </div>
           <button 
             onClick={() => setIsOpen(false)} 
+            aria-label={t("close")}
             className="text-gray-400 hover:text-white bg-white/5 p-1.5 rounded-full transition-colors"
           >
             <X size={18} />
@@ -61,14 +64,14 @@ export function LiveChat() {
             // 1-qadam: Ism va Telefon
             <div className="space-y-4">
               <div className="text-center mb-6">
-                <h3 className="text-xl font-bold text-white mb-2">Assalomu alaykum!</h3>
-                <p className="text-sm text-gray-400">Sizga qanday yordam bera olamiz?</p>
+                <h3 className="text-xl font-bold text-white mb-2">{t("greeting")}</h3>
+                <p className="text-sm text-gray-400">{t("help")}</p>
               </div>
 
               <div>
                 <input 
                   type="text" 
-                  placeholder="Ismingiz *" 
+                  placeholder={t("namePlaceholder")} 
                   value={name}
                   onChange={(e) => {
                     setName(e.target.value);
@@ -76,13 +79,13 @@ export function LiveChat() {
                   }}
                   className={`w-full bg-black/40 border ${errors.name ? "border-red-500/50" : "border-white/10"} rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-primary-500 transition-all`}
                 />
-                {errors.name && <p className="text-red-400 text-xs mt-1 ml-1">Ismingizni kiriting</p>}
+                {errors.name && <p className="text-red-400 text-xs mt-1 ml-1">{t("nameError")}</p>}
               </div>
 
               <div>
                 <input 
                   type="tel" 
-                  placeholder="+998 90 123 45 67 *" 
+                  placeholder={t("phonePlaceholder")} 
                   value={phone}
                   onChange={(e) => {
                     setPhone(e.target.value);
@@ -90,32 +93,32 @@ export function LiveChat() {
                   }}
                   className={`w-full bg-black/40 border ${errors.phone ? "border-red-500/50" : "border-white/10"} rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-primary-500 transition-all`}
                 />
-                {errors.phone && <p className="text-red-400 text-xs mt-1 ml-1">Telefon raqamingizni kiriting</p>}
+                {errors.phone && <p className="text-red-400 text-xs mt-1 ml-1">{t("phoneError")}</p>}
               </div>
 
               <button 
                 onClick={handleStartChat}
                 className="w-full bg-white text-black font-semibold py-3 rounded-xl hover:bg-gray-200 transition-colors mt-2"
               >
-                Suhbatni boshlash
+                {t("start")}
               </button>
             </div>
           ) : (
             // 2-qadam: Chat (Ism kiritilgandan keyin)
             <div>
               <div className="bg-black/40 rounded-2xl p-4 text-sm text-gray-300 mb-4 h-48 overflow-y-auto flex flex-col gap-3 border border-white/5">
-                <div className="text-center text-xs text-gray-500 mb-2">Suhbat boshlandi. Operator tez orada javob beradi.</div>
+                <div className="text-center text-xs text-gray-500 mb-2">{t("started")}</div>
                 <div className="bg-white/10 text-white p-3 rounded-xl rounded-tl-none self-start max-w-[80%] border border-white/5">
-                  Salom, {name}! Sizga qanday yordam bera olamiz?
+                  {t("hello", { name })}
                 </div>
               </div>
               <div className="relative">
                 <input 
                   type="text" 
-                  placeholder="Xabar yozing..." 
+                  placeholder={t("messagePlaceholder")} 
                   className="w-full bg-black/40 border border-white/10 rounded-full pl-5 pr-12 py-3 text-sm text-white focus:outline-none focus:border-primary-500 transition-all" 
                 />
-                <button className="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-white text-black flex items-center justify-center hover:bg-gray-200 transition-colors">
+                <button aria-label={t("send")} className="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-white text-black flex items-center justify-center hover:bg-gray-200 transition-colors">
                   <Send size={16} />
                 </button>
               </div>
@@ -127,6 +130,7 @@ export function LiveChat() {
       {/* Chat Tugmasi (Suzuvchi) */}
       <button 
         onClick={() => setIsOpen(!isOpen)}
+        aria-label={isOpen ? t("close") : t("open")}
         className="relative w-14 h-14 rounded-full bg-primary-500/20 border border-primary-500/30 backdrop-blur-md flex items-center justify-center text-primary-400 shadow-[0_0_20px_rgba(59,130,246,0.2)] hover:bg-primary-500/30 hover:scale-105 active:scale-95 transition-all z-[100]"
       >
         {isOpen ? <X size={24} /> : <MessageCircle size={24} />}

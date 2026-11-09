@@ -1,0 +1,429 @@
+{
+  "Metadata": {
+    "title": "xosting.net — Fast and Reliable Hosting",
+    "description": "The most modern NVMe SSD hosting in Uzbekistan. DDoS protection, 99.9% uptime and 24/7 technical support.",
+    "keywords": "hosting, xosting, uzbekistan hosting, nvme ssd, vps, domain",
+    "ogTitle": "xosting.net — Perfect Hosting",
+    "ogDescription": "The perfect environment for your project. NVMe SSD and DDoS protection."
+  },
+  "Navbar": {
+    "pricing": "Pricing",
+    "features": "Features",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "login": "Log in",
+    "getStarted": "Get started",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "LanguageSwitcher": {
+    "label": "Select language"
+  },
+  "Hero": {
+    "badge": "Next-generation NVMe Hosting",
+    "titleLine1": "The perfect environment",
+    "titleHighlight": "for your project",
+    "subtitle": "Blazing-fast NVMe SSD drives, powerful DDoS protection and a 99.99% uptime guarantee. Speed up your website with our servers.",
+    "searchPlaceholder": "Search for your perfect domain...",
+    "searchButton": "Search",
+    "badgeSecurity": "Top-tier Security",
+    "badgeSpeed": "NVMe Speed",
+    "badgeSupport": "Premium Support"
+  },
+  "TrustBar": {
+    "uptime": "Uptime Guarantee",
+    "clients": "Active Customers",
+    "support": "Technical Support",
+    "disks": "Fast Drives"
+  },
+  "Features": {
+    "titleLine1": "Everything you need",
+    "titleLine2": "in every plan",
+    "subtitle": "Our hosting services come equipped with all the tools modern websites require.",
+    "items": {
+      "nvme": { "title": "NVMe SSD Drives", "desc": "Up to 10 times faster than traditional SSDs. Your website opens instantly." },
+      "ssl": { "title": "Free SSL Certificate", "desc": "All your websites are automatically protected with HTTPS." },
+      "ddos": { "title": "DDoS Protection", "desc": "Powerful L3-L7 level protection. Attacks never reach your website." },
+      "stack": { "title": "PHP, Python, Node.js", "desc": "WordPress, Laravel, Django or Express — work in the stack that suits you best." },
+      "databases": { "title": "MySQL and PostgreSQL", "desc": "Manage your databases in just a few clicks with the ISPmanager panel." },
+      "backup": { "title": "Automatic Backups", "desc": "Your data is saved automatically every day. No need to worry." }
+    }
+  },
+  "Pricing": {
+    "titleBefore": "Flexible",
+    "titleHighlight": "Pricing",
+    "subtitle": "Hosting plans for every need. Whatever the size of your project, we have the right solution for you.",
+    "monthly": "Monthly",
+    "yearly": "Yearly",
+    "yearlyDiscount": "-20%",
+    "perMonth": "UZS / mo",
+    "choose": "Choose plan",
+    "plans": {
+      "start": {
+        "desc": "For small projects and starter websites",
+        "features": ["5 GB NVMe SSD", "1 Website", "1 Email account", "1 Database", "Free SSL", "10% CPU, 256MB RAM"]
+      },
+      "business": {
+        "desc": "For small businesses and multiple websites",
+        "features": ["15 GB NVMe SSD", "5 Websites", "10 Email accounts", "5 Databases", "Free SSL", "25% CPU, 512MB RAM", "Automatic Backup"]
+      },
+      "premium": {
+        "desc": "For mid-size projects and resource-hungry websites",
+        "features": ["40 GB NVMe SSD", "20 Websites", "50 Email accounts", "20 Databases", "Free SSL", "50% CPU, 1GB RAM", "Automatic Backup", "LiteSpeed Cache"]
+      },
+      "ultimate": {
+        "desc": "For large projects and high traffic",
+        "features": ["100 GB NVMe SSD", "Unlimited Websites", "Unlimited Email accounts", "Unlimited Databases", "Free SSL", "75% CPU, 2GB RAM", "Automatic Backup", "Priority Support"]
+      }
+    }
+  },
+  "Payments": {
+    "caption": "Pay with convenient and secure payment systems"
+  },
+  "Testimonials": {
+    "titleBefore": "Customer",
+    "titleHighlight": "Reviews",
+    "subtitle": "What do our users say about us?",
+    "reviews": [
+      {
+        "name": "Jasurbek T.",
+        "role": "Backend Developer",
+        "text": "Extremely fast servers for my Django projects. The NVMe drives really make a noticeable difference. Support works 24/7 and answers every question quickly."
+      },
+      {
+        "name": "Malika K.",
+        "role": "Marketer",
+        "text": "Our corporate website is hosted here. Its resilience against DDoS attacks and the 99.99% uptime guarantee are crucial for our business. The prices are affordable too."
+      },
+      {
+        "name": "Sardor M.",
+        "role": "Project Manager",
+        "text": "The ISPmanager panel is very convenient. Connecting a new domain and SSL takes just a few minutes. The technical support is truly professional."
+      }
+    ]
+  },
+  "FAQ": {
+    "titleBefore": "Frequently Asked",
+    "titleHighlight": "Questions",
+    "items": [
+      {
+        "q": "How long does it take for hosting to activate after purchase?",
+        "a": "Once the payment is completed, your hosting is activated automatically within a few minutes, and all login details are sent to you by email."
+      },
+      {
+        "q": "Can I migrate my website from another provider?",
+        "a": "Absolutely! Our technical team will migrate your website from your current provider to us for free and without any data loss."
+      },
+      {
+        "q": "Which payment methods are available?",
+        "a": "You can pay with Payme, Click, Paynet, Xazna, Humo, Ucard, Oson, Plum, Visa, Mastercard and cryptocurrencies."
+      },
+      {
+        "q": "Is there protection against DDoS attacks?",
+        "a": "Yes, all our plans include powerful L3-L7 level DDoS protection. Attacks never reach your website."
+      },
+      {
+        "q": "How does technical support work?",
+        "a": "Our 24/7 support team is always available via Telegram, live chat and phone. We resolve any issue quickly."
+      }
+    ]
+  },
+  "CTA": {
+    "titleLine1": "Start Your Project",
+    "titleHighlight": "With Us",
+    "text": "Sign up today and get <highlight>20% off</highlight> your first month of hosting.",
+    "createAccount": "Create account",
+    "contactOperator": "Contact an operator"
+  },
+  "Footer": {
+    "description": "Professional hosting and server solutions in Uzbekistan. Reliable, fast and secure. Our servers provide the best environment for your project.",
+    "servicesTitle": "Services",
+    "webHosting": "Web Hosting",
+    "domainRegistration": "Domain Registration",
+    "corporateMail": "Corporate Email",
+    "sslCertificates": "SSL Certificates",
+    "companyTitle": "Company",
+    "about": "About us",
+    "contact": "Contact",
+    "offer": "Public offer",
+    "privacy": "Privacy policy",
+    "contactTitle": "Contact",
+    "support": "(Support)",
+    "group": "(Community)",
+    "copyright": "© 2026 <brand>xosting.net</brand>. All rights reserved."
+  },
+  "LiveChat": {
+    "title": "xosting.net Chat",
+    "open": "Open chat",
+    "close": "Close chat",
+    "greeting": "Hello!",
+    "help": "How can we help you?",
+    "namePlaceholder": "Your name *",
+    "nameError": "Please enter your name",
+    "phonePlaceholder": "+998 90 123 45 67 *",
+    "phoneError": "Please enter your phone number",
+    "start": "Start chat",
+    "started": "Chat started. An operator will reply shortly.",
+    "hello": "Hello, {name}! How can we help you?",
+    "messagePlaceholder": "Type a message...",
+    "send": "Send"
+  },
+  "Dashboard": {
+    "Metadata": {
+      "default": "Client Area",
+      "overview": "Overview",
+      "services": "My Services",
+      "domains": "Domains",
+      "billing": "Billing",
+      "support": "Support",
+      "settings": "Settings"
+    },
+    "Nav": {
+      "label": "Client area navigation",
+      "overview": "Overview",
+      "services": "My Services",
+      "domains": "Domains",
+      "billing": "Billing",
+      "support": "Support",
+      "settings": "Settings",
+      "logout": "Log out",
+      "openMenu": "Open menu",
+      "closeMenu": "Close menu",
+      "skipToContent": "Skip to main content",
+      "backToSite": "Back to website",
+      "upgradeTitle": "Need more resources?",
+      "upgradeText": "Upgrade your plan in just a few clicks.",
+      "upgradeCta": "View plans"
+    },
+    "Topbar": {
+      "notifications": "Notifications",
+      "unread": "{count} new",
+      "markAllRead": "Mark all as read",
+      "empty": "No new notifications",
+      "userMenu": "User menu",
+      "settings": "Settings",
+      "support": "Help center",
+      "logout": "Log out"
+    },
+    "Notifications": {
+      "invoice": {
+        "title": "New invoice",
+        "text": "Invoice {number} has been issued."
+      },
+      "ticket": {
+        "title": "Your ticket has a reply",
+        "text": "A specialist has replied to ticket #{id}."
+      },
+      "domain": {
+        "title": "Domain expiring soon",
+        "text": "The registration for {domain} expires soon."
+      }
+    },
+    "Status": {
+      "active": "Active",
+      "paid": "Paid",
+      "pending": "Pending",
+      "open": "Open",
+      "answered": "Answered",
+      "closed": "Closed",
+      "expiringSoon": "Expiring soon",
+      "expired": "Expired",
+      "cancellationRequested": "Cancelling"
+    },
+    "Common": {
+      "currency": "UZS",
+      "monthly": "Monthly",
+      "yearly": "Yearly",
+      "perMonth": "mo",
+      "perYear": "yr",
+      "close": "Close",
+      "viewAll": "View all",
+      "gb": "{used} / {total} GB",
+      "newTab": "opens in a new tab"
+    },
+    "Overview": {
+      "welcome": "Welcome back, <highlight>{name}</highlight>!",
+      "subtitle": "Your account and services at a glance.",
+      "stats": {
+        "services": "Active services",
+        "domains": "Domains",
+        "balance": "Balance due",
+        "tickets": "Open tickets"
+      },
+      "activeServices": "Active services",
+      "activePlans": "{count, plural, one {# active hosting plan} other {# active hosting plans}}",
+      "noHosting": "You don't have an active hosting plan yet.",
+      "disk": "Disk",
+      "bandwidth": "Bandwidth",
+      "manageServices": "Manage",
+      "quickActions": "Quick actions",
+      "createSite": "Create new site",
+      "createSiteText": "Add a website in ISPmanager",
+      "addDomain": "Add domain",
+      "addDomainText": "Register or transfer a domain",
+      "contactSupport": "Contact support",
+      "contactSupportText": "Our specialists are available 24/7",
+      "recentInvoices": "Recent invoices"
+    },
+    "Services": {
+      "title": "My Services",
+      "subtitle": "Manage, upgrade or cancel your hosting and server services.",
+      "types": {
+        "hosting": "Hosting",
+        "vps": "VPS server"
+      },
+      "billingCycle": "Billing cycle",
+      "price": "Price",
+      "nextDue": "Next due date",
+      "disk": "Disk",
+      "bandwidth": "Bandwidth",
+      "specs": "Specifications",
+      "manage": "Manage",
+      "upgrade": "Upgrade",
+      "cancel": "Cancel",
+      "cancelTitle": "Cancel service",
+      "cancelText": "Are you sure you want to cancel {name}? The service will be terminated at the end of the current billing period and all of its data will be deleted.",
+      "cancelConfirm": "Yes, cancel",
+      "keep": "Keep service",
+      "cancelSuccess": "Your cancellation request for {name} has been received.",
+      "empty": "You don't have any active services yet."
+    },
+    "Domains": {
+      "title": "Domains",
+      "subtitle": "Your registered domains and their expiration dates.",
+      "add": "Add domain",
+      "registered": "Registered",
+      "expires": "Expires",
+      "expiredText": "Registration expired",
+      "daysLeft": "{days, plural, one {# day left} other {# days left}}",
+      "autoRenew": "Auto-renew",
+      "autoRenewOn": "Auto-renew enabled for {domain}.",
+      "autoRenewOff": "Auto-renew disabled for {domain}.",
+      "renew": "Renew",
+      "renewSuccess": "Invoice {number} has been created to renew {domain}.",
+      "addTitle": "Add domain",
+      "addText": "Register a new domain or transfer an existing one to xosting.net.",
+      "domainLabel": "Domain name",
+      "domainPlaceholder": "example.com",
+      "domainError": "Enter a valid domain name, e.g. example.com",
+      "actionLabel": "Action",
+      "register": "Register a new domain",
+      "transfer": "Transfer from another provider",
+      "registerSuccess": "Your registration request for {domain} has been received.",
+      "transferSuccess": "Your transfer request for {domain} has been received.",
+      "cancel": "Cancel",
+      "addSubmit": "Submit request",
+      "empty": "You don't have any domains yet."
+    },
+    "Billing": {
+      "title": "Billing",
+      "subtitle": "Invoice history, payment status and PDF copies.",
+      "balanceDue": "Balance due",
+      "pendingCount": "{count, plural, =0 {No unpaid invoices} one {# invoice pending} other {# invoices pending}}",
+      "paidThisYear": "Paid this year",
+      "nextPayment": "Next payment",
+      "noPayment": "No upcoming payments",
+      "invoices": "Invoices",
+      "filterLabel": "Filter invoices",
+      "filters": {
+        "all": "All",
+        "paid": "Paid",
+        "pending": "Pending"
+      },
+      "number": "Number",
+      "description": "Description",
+      "date": "Date",
+      "dueDate": "Due date",
+      "amount": "Amount",
+      "status": "Status",
+      "download": "Download PDF",
+      "downloadShort": "PDF",
+      "domainRenewal": "Domain renewal: {domain}",
+      "empty": "No invoices found."
+    },
+    "Support": {
+      "title": "Help Center",
+      "subtitle": "Your ticket history. Our specialists usually reply within 15 minutes.",
+      "newTicket": "New ticket",
+      "filterLabel": "Filter tickets",
+      "filters": {
+        "all": "All",
+        "open": "Open",
+        "closed": "Closed"
+      },
+      "priority": "Priority",
+      "updated": "Updated",
+      "departments": {
+        "technical": "Technical support",
+        "billing": "Billing",
+        "sales": "Sales"
+      },
+      "priorities": {
+        "low": "Low",
+        "normal": "Normal",
+        "high": "High"
+      },
+      "samples": {
+        "ssl": "Error while installing SSL certificate",
+        "payment": "Payment not credited to my account",
+        "upgrade": "Upgrading my VPS plan",
+        "migration": "Migrating my website from another provider"
+      },
+      "form": {
+        "title": "New ticket",
+        "text": "Describe the issue in detail — it helps us resolve it faster.",
+        "subject": "Subject",
+        "subjectPlaceholder": "e.g. My website won't load",
+        "department": "Department",
+        "priority": "Priority",
+        "message": "Message",
+        "messagePlaceholder": "Describe the issue, any error messages and when it started...",
+        "subjectError": "The subject must be at least {min} characters long",
+        "messageError": "The message must be at least {min} characters long",
+        "cancel": "Cancel",
+        "submit": "Submit"
+      },
+      "success": "Ticket #{id} has been received. We'll reply shortly.",
+      "empty": "No tickets in this section."
+    },
+    "Settings": {
+      "title": "Settings",
+      "subtitle": "Manage your profile, security and notification preferences.",
+      "profile": {
+        "title": "Profile",
+        "text": "Your personal details and contact information.",
+        "fullName": "Full name",
+        "email": "Email",
+        "phone": "Phone number",
+        "save": "Save changes",
+        "saved": "Your profile has been saved.",
+        "nameError": "Enter your name",
+        "emailError": "Enter a valid email address"
+      },
+      "security": {
+        "title": "Security",
+        "text": "Use a strong, unique password to keep your account secure.",
+        "current": "Current password",
+        "new": "New password",
+        "confirm": "Confirm new password",
+        "hint": "At least {min} characters",
+        "submit": "Update password",
+        "success": "Your password has been updated.",
+        "currentError": "Enter your current password",
+        "minError": "The password must be at least {min} characters long",
+        "matchError": "The passwords don't match"
+      },
+      "notifications": {
+        "title": "Notifications",
+        "text": "Choose which emails you'd like to receive.",
+        "invoices": "Invoices and payments",
+        "invoicesText": "New invoices and payment reminders",
+        "tickets": "Ticket replies",
+        "ticketsText": "Get notified when a specialist replies",
+        "news": "News and promotions",
+        "newsText": "Discounts and new services",
+        "saved": "Notification preferences updated."
+      }
+    }
+  }
+}

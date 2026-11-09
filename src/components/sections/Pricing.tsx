@@ -1,44 +1,22 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/Button";
 import { Check } from "lucide-react";
 import { cn, formatPrice } from "@/lib/utils";
 import { FadeIn } from "@/components/ui/FadeIn";
 
 export function Pricing() {
+  const t = useTranslations("Pricing");
   const [isYearly, setIsYearly] = useState(false);
 
   const plans = [
-    {
-      name: "Start",
-      desc: "Kichik loyihalar va boshlang'ich saytlar uchun",
-      priceMonthly: 12000,
-      priceYearly: 9600,
-      features: ["5 GB NVMe SSD", "1 ta Sayt", "1 ta Email", "1 ta Database", "Bepul SSL", "10% CPU, 256MB RAM"],
-    },
-    {
-      name: "Business",
-      desc: "Kichik biznes va bir necha saytlar uchun",
-      priceMonthly: 29000,
-      priceYearly: 23200,
-      features: ["15 GB NVMe SSD", "5 ta Sayt", "10 ta Email", "5 ta Database", "Bepul SSL", "25% CPU, 512MB RAM", "Avtomatik Backup"],
-    },
-    {
-      name: "Premium",
-      desc: "O'rta loyihalar va ko'p resurs talab qiladigan saytlar uchun",
-      priceMonthly: 59000,
-      priceYearly: 47200,
-      features: ["40 GB NVMe SSD", "20 ta Sayt", "50 ta Email", "20 ta Database", "Bepul SSL", "50% CPU, 1GB RAM", "Avtomatik Backup", "LiteSpeed Cache"],
-    },
-    {
-      name: "Ultimate",
-      desc: "Yirik loyihalar va yuqori trafik uchun",
-      priceMonthly: 99000,
-      priceYearly: 79200,
-      features: ["100 GB NVMe SSD", "Cheksiz Sayt", "Cheksiz Email", "Cheksiz Database", "Bepul SSL", "75% CPU, 2GB RAM", "Avtomatik Backup", "Priority Support"],
-    },
-  ];
+    { key: "start", name: "Start", priceMonthly: 12000, priceYearly: 9600 },
+    { key: "business", name: "Business", priceMonthly: 29000, priceYearly: 23200 },
+    { key: "premium", name: "Premium", priceMonthly: 59000, priceYearly: 47200 },
+    { key: "ultimate", name: "Ultimate", priceMonthly: 99000, priceYearly: 79200 },
+  ] as const;
 
   return (
     <section id="tariflar" className="py-24 px-4 relative">
@@ -46,10 +24,10 @@ export function Pricing() {
         <FadeIn>
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-5xl font-bold mb-4">
-              Moslashuvchan <span className="text-primary-500">Narxlar</span>
+              {t("titleBefore")} <span className="text-primary-500">{t("titleHighlight")}</span>
             </h2>
             <p className="text-gray-400 text-lg mb-8 max-w-2xl mx-auto">
-              Hosting tariflar. Loyihangiz hajmidan qat'i nazar, bizda siz uchun mos yechim bor.
+              {t("subtitle")}
             </p>
 
             <div className="inline-flex items-center p-1 glass-card rounded-full">
@@ -60,7 +38,7 @@ export function Pricing() {
                   !isYearly ? "bg-white text-black shadow-lg" : "text-gray-400 hover:text-white"
                 )}
               >
-                Oylik
+                {t("monthly")}
               </button>
               <button
                 onClick={() => setIsYearly(true)}
@@ -69,8 +47,8 @@ export function Pricing() {
                   isYearly ? "bg-white text-black shadow-lg" : "text-gray-400 hover:text-white"
                 )}
               >
-                Yillik
-                <span className="text-xs bg-primary-500/20 text-primary-400 px-2 py-0.5 rounded-full">-20%</span>
+                {t("yearly")}
+                <span className="text-xs bg-primary-500/20 text-primary-400 px-2 py-0.5 rounded-full">{t("yearlyDiscount")}</span>
               </button>
             </div>
           </div>
@@ -83,18 +61,18 @@ export function Pricing() {
                 
                 <div className="mb-6">
                   <h3 className="text-2xl font-bold mb-2">{plan.name}</h3>
-                  <p className="text-sm text-gray-400 min-h-[40px]">{plan.desc}</p>
+                  <p className="text-sm text-gray-400 min-h-[40px]">{t(`plans.${plan.key}.desc`)}</p>
                 </div>
 
                 <div className="mb-8">
                   <span className="text-4xl font-bold text-white">
                     {isYearly ? formatPrice(plan.priceYearly) : formatPrice(plan.priceMonthly)}
                   </span>
-                  <span className="text-gray-400 ml-2">so'm / oy</span>
+                  <span className="text-gray-400 ml-2">{t("perMonth")}</span>
                 </div>
 
                 <ul className="space-y-3 mb-8 flex-1">
-                  {plan.features.map((feature, j) => (
+                  {(t.raw(`plans.${plan.key}.features`) as string[]).map((feature, j) => (
                     <li key={j} className="flex items-start gap-3 text-sm text-gray-300">
                       <Check size={18} className="text-primary-500 shrink-0 mt-0.5" />
                       {feature}
@@ -103,7 +81,7 @@ export function Pricing() {
                 </ul>
 
                 <Button variant="secondary" className="w-full">
-                  Tanlash
+                  {t("choose")}
                 </Button>
               </div>
             </FadeIn>

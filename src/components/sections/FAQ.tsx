@@ -1,40 +1,21 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import { ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export function FAQ() {
+  const t = useTranslations("FAQ");
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  const faqs = [
-    {
-      q: "Xosting sotib olgandan keyin qancha vaqtda aktivlashadi?",
-      a: "To'lov amalga oshirilganidan so'ng hosting xizmatlari avtomatik ravishda, bir necha daqiqa ichida aktivlashadi va sizga barcha kirish ma'lumotlari email orqali yuboriladi."
-    },
-    {
-      q: "Boshqa provayderdan saytimni ko'chirib o'ta olamanmi?",
-      a: "Ha, albatta! Bizning texnik jamoamiz sizning saytingizni boshqa provayderdan bizga bepul va hech qanday ma'lumot yo'qotishsiz ko'chirib o'tishga yordam beradi."
-    },
-    {
-      q: "Qaysi to'lov usullari mavjud?",
-      a: "Bizda Payme, Click, Paynet, Xazna, Humo, Ucard, Oson, Plum, Visa, Mastercard va kriptovalyutalar orqali to'lov qilish mumkin."
-    },
-    {
-      q: "DDoS hujumlardan himoya bormi?",
-      a: "Ha, barcha tariflarimiz L3-L7 darajasidagi kuchli DDoS himoyasi bilan jihozlangan. Hujumlar sizning saytingizga yetib kelmaydi."
-    },
-    {
-      q: "Texnik yordam qanday ishlaydi?",
-      a: "Bizning 24/7 texnik yordam jamoamiz Telegram, Livechat va telefon orqali doim aloqada. Har qanday muammoni tezda hal qilamiz."
-    }
-  ];
+  const faqs = t.raw("items") as { q: string; a: string }[];
 
   return (
     <section id="faq" className="py-24 px-4">
       <div className="max-w-3xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold mb-4">Tez-tez So'raladigan <span className="text-primary-500">Savollar</span></h2>
+          <h2 className="text-3xl md:text-5xl font-bold mb-4">{t("titleBefore")} <span className="text-primary-500">{t("titleHighlight")}</span></h2>
         </div>
 
         <div className="space-y-4">
@@ -53,7 +34,7 @@ export function FAQ() {
               <div 
                 className={cn(
                   "px-6 overflow-hidden transition-all duration-300 text-gray-400 leading-relaxed",
-                  openIndex === i ? "max-h-40 pb-6 opacity-100" : "max-h-0 opacity-0"
+                  openIndex === i ? "max-h-72 pb-6 opacity-100" : "max-h-0 opacity-0"
                 )}
               >
                 {faq.a}

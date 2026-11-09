@@ -1,9 +1,12 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/Button";
 import { Search, ShieldCheck, Zap, Server } from "lucide-react";
 
 export function Hero() {
+  const t = useTranslations("Hero");
+
   return (
     <section className="relative pt-40 pb-20 px-4 overflow-hidden">
       
@@ -19,19 +22,18 @@ export function Hero() {
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-card text-xs font-medium text-primary-400 mb-8">
           <span className="flex h-2 w-2 rounded-full bg-primary-500 animate-pulse"></span>
-          Yangi avlod NVMe Hosting
+          {t("badge")}
         </div>
 
         {/* Sarlavha */}
 <h1 className="text-3xl sm:text-4xl md:text-7xl font-bold tracking-tight mb-6 leading-tight">
-  Loyihangiz uchun <br />
-  <span className="text-gradient">mukammal muhit</span>
+  {t("titleLine1")} <br />
+  <span className="text-gradient">{t("titleHighlight")}</span>
 </h1>
 
         {/* Matn */}
         <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-10">
-          Tezkor NVMe SSD disklar, kuchli DDoS himoyasi va 99.99% Uptime kafolati. 
-          Bizning serverlarimiz orqali saytingizni tezlashtiring.
+          {t("subtitle")}
         </p>
 
         {/* Domen Qidiruv */}
@@ -40,11 +42,11 @@ export function Hero() {
     <Search className="ml-4 text-gray-400 group-focus-within:text-primary-400 transition-colors" size={20} />
     <input 
       type="text" 
-      placeholder="Mukammal domenni qidiring..." 
+      placeholder={t("searchPlaceholder")} 
       className="w-full bg-transparent border-none text-white px-4 py-3 focus:outline-none placeholder:text-gray-500"
     />
 <Button className="rounded-full px-8 py-3 bg-white text-black font-semibold hover:bg-gray-100 transition-colors shadow-[0_0_30px_rgba(255,255,255,0.15)]">
-  Qidirish
+  {t("searchButton")}
 </Button>
    </div>
 </div>
@@ -53,15 +55,15 @@ export function Hero() {
         <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-400">
           <div className="flex items-center gap-2">
             <ShieldCheck size={18} className="text-primary-500" />
-            Top Xavfsizlik
+            {t("badgeSecurity")}
           </div>
           <div className="flex items-center gap-2">
             <Zap size={18} className="text-accent-400" />
-            NVMe Tezlik
+            {t("badgeSpeed")}
           </div>
           <div className="flex items-center gap-2">
             <Server size={18} className="text-primary-400" />
-            Premium Qo'llab-quvvatlash
+            {t("badgeSupport")}
           </div>
         </div>
 

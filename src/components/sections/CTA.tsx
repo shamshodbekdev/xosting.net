@@ -1,7 +1,10 @@
+import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/Button";
 import { FadeIn } from "@/components/ui/FadeIn";
 
 export function CTA() {
+  const t = useTranslations("CTA");
+
   return (
     <section className="py-20 px-4 relative overflow-hidden">
       {/* Orqa fondagi harakatlanuvchi nurlar */}
@@ -16,20 +19,22 @@ export function CTA() {
             <div className="absolute inset-0 bg-gradient-to-b from-white/5 to-transparent pointer-events-none" />
 
             <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">
-              Loyihangizni Biz Bilan <br /> 
-              <span className="text-gradient">Boshlang</span>
+              {t("titleLine1")} <br />
+              <span className="text-gradient">{t("titleHighlight")}</span>
             </h2>
             
             <p className="text-gray-400 text-base md:text-lg mb-8 max-w-xl mx-auto leading-relaxed">
-              Bugunoq ro'yxatdan o'ting va birinchi oylik hosting uchun <span className="text-white font-semibold">20% chegirmaga</span> ega bo'ling.
+              {t.rich("text", {
+                highlight: (chunks) => <span className="text-white font-semibold">{chunks}</span>,
+              })}
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
               <Button size="md" className="w-full sm:w-auto px-8 py-4 text-base">
-                Hisob yaratish
+                {t("createAccount")}
               </Button>
               <Button variant="outline" size="md" className="w-full sm:w-auto px-8 py-4 text-base border-white/20 hover:bg-white/5">
-                Operator bilan bog'lanish
+                {t("contactOperator")}
               </Button>
             </div>
 

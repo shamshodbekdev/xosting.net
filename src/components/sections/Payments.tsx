@@ -1,4 +1,8 @@
+import { useTranslations } from "next-intl";
+
 export function Payments() {
+  const t = useTranslations("Payments");
+
   const payments = [
     { name: "Payme", logo: "/tolov-tizimlar/payme-uz-icon.png" },
     { name: "Click", logo: "/tolov-tizimlar/click-uz-icon.png" },
@@ -21,7 +25,7 @@ export function Payments() {
     <section className="py-16 border-t border-white/5 overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 text-center">
         <p className="text-sm text-gray-500 uppercase tracking-widest mb-8">
-          Qulay va xavfsiz to'lov tizimlari orqali to'lang
+          {t("caption")}
         </p>
       </div>
       
